@@ -3,68 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY CUSTOM TITLE</title>
-    <link rel="shortcut icon" href="computer.ico" type="image/x-icon">
+    <title>My Resume</title>
+    <link rel="shortcut icon" href="computer.ico" type="image/x-icon" >
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/bebas" type="text/css"/>
+    <style>
+        
+    
+        body {
+        margin: 0;
+        box-sizing: border-box;
+        }
+
+        img {
+        border-radius: 50%;
+        }
+
+        .col-div-4{width: 15%; float: left;}
+        .col-div-8{width: 65%; float: left;}
+        .col-div-6{width: 50%; float: left; position: relative;}
+        .clearfix{clear: both;}
+        
+        .spacing{
+        margin: 50px;
+        margin-top: 0;
+        padding: 50px;
+        }
+
+        .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f5f5f5;
+        }
+    
+        .header .logo {
+        font-size: 35px;
+        font-family: 'BebasNeueRegular';
+        color: #000;
+        text-decoration: none;
+        margin-left: 30px;
+        }
+    
+        .nav-items {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #f5f5f5;
+        margin-right: 20px;
+        }
+    
+        .nav-items a {
+        text-decoration: none;
+        color: #000;
+        padding: 35px 20px;
+        }
+    
+        .p3 {
+            letter-spacing: 4px;
+            color: #54585d; 
+            font-weight: 500;
+        }
+
+        .heading    {
+            text-transform: uppercase;
+            font-weight: 500;
+            color: var(--one); 
+            letter-spacing: 1px; 
+            font-size: 25px;
+        }
+
+        .p5 {
+            font-size: 20px; 
+            font-weight: 700;
+            color: var(--black);
+        }
+
+        .span1 { 
+            font-size: 16px;
+            color: var(--black);
+        }
+        .circle{
+            color:var(--white); 
+            font-size: 14px!important; 
+            margin-top: 7px;
+        }
+        .circle1{
+            color:#54585d; 
+            font-size: 14px!important; 
+            margin-top: 7px;
+        }
+
+    </style>
 </head>
+
 <body>
 <font face= "Century Gothic"size="4">
-    <br>
-    <a href="https://www.facebook.com/">Facebook Profile</a>
-    <a href="#ProfSum">Summary</a>
-    <a href="#ProfEx">Experience</a>
-    <a href="#Skills">Skills</a>
-    <a href="#EducHis">Education</a>
-    <hr>
-    <center>
-        <h1>Rachelle A. Beaudry</h1>
-        <p>Babysitter</p>
+    <header class="header">
+        <a href="#" class="logo">MY RESUME</a>
+        <nav class="nav-items">
+        <a href="#WorkEx">Experience</a>
+        <a href="#Educ">Education</a>
+        <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="spacing">
+        <center>
+            <br>
+            <h1>Rachelle A. Beaudry</h1>
+            <p class="p3">UI & UX DESIGNER</p>
+            <img width="300" height="300" src="samplepic.png" alt="1by1">
+            <p><b>Phone Number:</b> 123-456-7890 &ensp;&ensp;&ensp;&ensp; <b>Email:</b> hello@reallygreatsite.com</p>
+            <p><b>Address: </b>123 Anywhere St., Any City &ensp;&ensp; <b>LinkedIn: </b> <a href="https://www.linkedin.com/login">Rachelle Beaudry</a> </p> 
+            <br>
+        </center>
+
         <hr>
-        <img width="300" height="300" src="samplepic.png" alt="1by1">
-        <p><b>Phone Number:</b> 123-456-7890 &ensp;&ensp;&ensp;&ensp; <b>Email:</b> hello@reallygreatsite.com</p>
-        <p><b>Address</b>123 Anywhere St., Any City &ensp;&ensp;&ensp;&ensp; <b>Website</b>www.reallygreatsite.com </p> 
-    
-    </center>
-    
-    <hr>
-    <h3 id="ProfSum">Professional Summary</h3>
-    <p>Responsible babysitter with 6 years of experience caring for children during weekends, evenings, and summer. Skilled in creating fun, and educational activities while prioritizing children's safety and well-being. Seeking a responsible role as a weekend Babysitter for your family</p>
+        <br>
+        <h2 class="heading" id="ProfSum">Professional Summary</h2>
+        <p>Personable IT consultant with 4+ years of experience in a global technology firm. CompTIA A+ Certification. Scored region-leading QST rating based on internal review (98.76%). Seeking to leverage solid technical skills and abilities to advance my career as the next IT consultant for Linsang Group.</p>
+        <br>
+        <hr>
 
-    <hr>
-    <h3 id="ProfEx">Professional Experience</h3>
-    <h4>The Stewart Family&ensp;|&ensp;Company Name, Any City&ensp;|&ensp;2016-2018</h4>
-    <blockquote>* Care for a 5-year-old girl during parents' evening absences</blockquote>
-    <blockquote>* Ensure children are bathed, fed, and in bed prior to parent's return</blockquote>
-    <blockquote>* Play with children and read bedtime stories, improving children's interest in storytelling</blockquote>
-    <blockquote>* Clean and organize the house</blockquote>
-    <blockquote>* Took child to parks during daytime hours</blockquote>
-    <br> 
+        <h2 class="heading" id="WorkEx">Work Experience</h2>
 
-    <h4>The Hamilton Family&ensp;|&ensp;Company Name, Any City&ensp;|&ensp;2018-present</h4>
-    <blockquote>* Looked after a 7-year-old boy during weekends and summer</blockquote>
-    <blockquote>* Created interesting home learning activities, such as kids' watercolor painting</blockquote>
-    <blockquote>* Prepared lunch and snacks, paying attention to the nutritional values of food, and turning</blockquote>
-    <blockquote>around the child's previous dislike for cucumbers</blockquote>
-    <blockquote>* Coordinates 10+ playdates with other families on the parent's list of approved playmates</blockquote>
+        <div class="col-div-4">
+            <p class="p5">2018-2021</p>
+            <span class="span1">TechSolutions Inc</span>
+        </div>
+        <div class="col-div-8">
+            <p class="p5">IT Consultant </p>
+        <span class="span1">
+            <ul>
+            <li>Led a team in the successful implementation of an ERP system for a manufacturing client, resulting in a 25% reduction in production costs.</li>
+            <li>Collaborated with clients to define project scopes, objectives, and deliverables, ensuring alignment with business objectives.</li>
+            <li>Conducted comprehensive technical assessments, identified system vulnerabilities, and recommended security enhancements, reducing potential risks by 20%.</li>
+            <li>Managed vendor relationships and negotiated contracts, achieving a 15% cost reduction on software purchases.</li>
+            </ul>
+        </span>
+        </div>
+        <div class="clearfix"></div>
+        
+
+        <div class="col-div-4">
+            <p class="p5">2015-2018</p>
+            <span class="span1">DataLink Corporation </span>
+        </div>
+        <div class="col-div-8">
+            <p class="p5">Senior Systems Analyst  </p>
+        <span class="span1">
+            <ul>
+                <li>Orchestrated the migration of 8 client systems to cloud platforms, resulting in a 30% decrease in operational expenses and improved scalability.</li>
+                <li>Conducted thorough system audits, identified security gaps, and implemented measures to ensure data protection and compliance.</li>
+                <li>Translated client requirements into actionable technical solutions, leading to a 20% increase in client satisfaction.</li>
+                <li>Led training sessions for internal teams, ensuring smooth transitions during system upgrades and minimizing disruptions.</li>
+                <li>Took child to parks during daytime hours</li>
+            </ul>
+        </span>
+        </div>
+        <div class="clearfix"></div>
+
+        
+        <div class="col-div-4">
+            <p class="p5">2012-2014</p>
+            <span class="span1">ByteTech Services </span>
+        </div>
+        <div class="col-div-8">
+            <p class="p5">IT Project Coordinator </p>
+        <span class="span1">
+            <ul>
+                <li>Managed the end-to-end lifecycle of 10 IT projects, ensuring adherence to timelines, budgets, and project goals.</li>
+                <li>Collaborated closely with stakeholders to gather requirements, establish project plans, and track progress, enhancing project transparency.</li>
+                <li>Utilized Agile methodologies to streamline workflows, resulting in a 25% reduction in project completion time.</li>
+                <li>Prepared detailed project documentation, including specifications and user manuals, facilitating knowledge sharing among team members.</li>
+            </ul>
+        </span>
+        </div>
+        <div class="clearfix"></div>
+
+
+<!-- //////////////////////////////////////////////////////////////////////// -->
+        
+        <hr>
+        <h2 class="heading" id="Educ">Educational Background</h2>
+        <div class="clearfix"></div>
+
+        <p class="p5">Master of Science in Information Technology</p>
+        <div class="col-div-4">
+            <span class="span1">Graduated: May 2012</span>
+        </div>
+        <div class="col-div-8">
+            <span class="span1"> University of Techville, Cityville, CA</span>
+        </div>
+        <div class="clearfix"></div>
+        <br>
+
+        
+        <p class="p5">Bachelor of Science in Computer Science</p>
+        <div class="col-div-4">
+            <span class="span1">Graduated: May 2010</span>
+        </div>
+        <div class="col-div-8">
+            <span class="span1"> Cityville University, Cityville, CA</span>
+        </div>
+        <div class="clearfix"></div>
+        <br>
+        <hr>
+
+
+        <h2 class="heading" id="Educ">Skills</h2>
+        <div class="clearfix"></div>
+
+        <div class="col-div-6">
+            <i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle1"></i>
+			<i class="fa fa-circle circle1"></i>
+		</div>
+	</div>
+	
     
-    <hr>
-    <h3 id="Skills">Skills</h3>
-    <blockquote>Meal and Snack preparation</blockquote>
-    <blockquote>Bathing, and Dressing</blockquote>
-    <blockquote>Activity Planning</blockquote>
-    <blockquote>Routine Management</blockquote>
-    <blockquote>Meal Planning and Preparation</blockquote>
-    <blockquote>Emergency First Aid Certified</blockquote>
+        
 
-    <hr>
-    <h3 id="EducHis">Educational History</h3>
-    <h4>Las Felipinas&ensp;|&ensp;Any City&ensp;|&ensp;2002-2007</h4>
-    <p>Senior High School</p>
-    <p>Consistent High Honors</p>
-
-    <h4>Las Felipinas&ensp;|&ensp;Any City&ensp;|&ensp;2002-2007</h4>
-    <p>Junior High School</p>
-    <p>With High Honors</p>
-    
 
     
 </body>
