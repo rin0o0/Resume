@@ -7,57 +7,62 @@
     <link rel="shortcut icon" href="computer.ico" type="image/x-icon" >
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/bebas" type="text/css"/>
     <style>
-        
-    
         body {
         margin: 0;
         box-sizing: border-box;
+        background-color: #EFF6EE;
         }
 
         img {
         border-radius: 50%;
         }
-
         .col-div-4{width: 15%; float: left;}
         .col-div-8{width: 65%; float: left;}
+
         .col-div-6{width: 50%; float: left; position: relative;}
+
+        .col-div-1{width: 30%; float: left;}
+        .col-div-2{width: 70%; float: left;}
+
         .clearfix{clear: both;}
         
         .spacing{
-        margin: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
         margin-top: 0;
-        padding: 50px;
+        padding: 20px;
+        
         }
 
         .header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #f5f5f5;
+        background-color: #588B8B;
         }
-    
+
         .header .logo {
         font-size: 35px;
         font-family: 'BebasNeueRegular';
-        color: #000;
+        color: #ffffff;
         text-decoration: none;
         margin-left: 30px;
         }
-    
+
         .nav-items {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: #f5f5f5;
+        background-color: #588B8B;
         margin-right: 20px;
         }
-    
+
         .nav-items a {
         text-decoration: none;
-        color: #000;
+        color: #ffffff;
         padding: 35px 20px;
         }
-    
+
         .p3 {
             letter-spacing: 4px;
             color: #54585d; 
@@ -79,31 +84,45 @@
         }
 
         .span1 { 
-            font-size: 16px;
+            font-size: 17px;
             color: var(--black);
         }
         .circle{
-            color:var(--white); 
+            color:#403233; 
             font-size: 14px!important; 
             margin-top: 7px;
         }
         .circle1{
-            color:#54585d; 
+            color:#588B8B; 
             font-size: 14px!important; 
             margin-top: 7px;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
         }
 
     </style>
 </head>
 
 <body>
-<font face= "Century Gothic"size="4">
+<font face= "Century Gothic" size="4" color = "#403233">
     <header class="header">
         <a href="#" class="logo">MY RESUME</a>
         <nav class="nav-items">
         <a href="#WorkEx">Experience</a>
         <a href="#Educ">Education</a>
-        <a href="#">Contact</a>
+        <a href="#certs">Certifications </a>
+        <a href="#certs">Languages & Software</a>
+        <a href="#skills">Skills</a>
         </nav>
     </header>
     <div class="spacing">
@@ -209,17 +228,242 @@
         <br>
         <hr>
 
+        <!-- //////////////////////////////////////////////////////// -->
+        
+        <div class="row">
+            <div class="column">
+                <h2 class="heading" id="certs">Certifications</h2>
+                <div class="clearfix"></div>
+                <ul>
+                    <li>Certified Information Systems Security Professional (CISSP)</li>
+                    <li>AWS Certified Solutions Architect - Associate</li>
+                    <li>CompTIA Project+ Certification</li>
+                    <li>Cisco Certified Network Associate (CCNA)</li>
+                    <li>Microsoft Certified: Azure Fundamentals</li>
+                    <li>Certified Ethical Hacker (CEH)</li>
+                    <li>ITIL Foundation Certification</li>
+                    <li>Certified ScrumMaster (CSM)</li>
+                    <li>VMware Certified Professional (VCP)</li>
+                    <li>
+                        Google Cloud Professional Cloud Architect</li>
+                </ul>
 
-        <h2 class="heading" id="Educ">Skills</h2>
+            </div>
+
+            <div class="column">
+                <h2 class="heading" id="Educ">Software/Languages</h2>
+                <div class="clearfix"></div>
+                <ul>
+                    <li>C/C++, C#</li>
+                    <li>Python, Java, SQL</li>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>PHP, ASP.NET</li>
+                    <li>VMware, Hyper-V</li>
+                    <li>Microsoft Azure, Amazon Web Services (AWS)</li>
+                    <li>Git, GitHub, Bitbucket</li>
+                    <li>Salesforce, JIRA, Confluence</li>
+                    <li>Microsoft Office Suite (Word, Excel, PowerPoint, Outlook)</li>
+                    <li>Adobe Creative Suite (Photoshop, Illustrator, InDesign)</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- //////////////////////////////////////////////////////// -->
+        
+        
+        <br>
+        <hr>
+        <h2 class="heading" id="skills">Skills</h2>
         <div class="clearfix"></div>
 
-        <div class="col-div-6">
-            <i class="fa fa-circle circle"></i>
-			<i class="fa fa-circle circle"></i>
-			<i class="fa fa-circle circle"></i>
-			<i class="fa fa-circle circle1"></i>
-			<i class="fa fa-circle circle1"></i>
-		</div>
+
+        <div class="row">
+            <div class="column">
+
+
+                <div class="col-div-1">
+                    <span class="span1">Project Management</span>
+                </div>
+                <div class="col-div-2">
+                    <span class="span1">
+                        <div class="col-div-6">
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle"></i>
+                        </div>
+                    </span>
+                </div>
+                <div class="clearfix"></div>
+                <br>
+
+                <div class="col-div-1">
+                    <span class="span1">Systems Integration</span>
+                </div>
+                <div class="col-div-2">
+                    <span class="span1">
+                        <div class="col-div-6">
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle"></i>
+                        </div>
+                    </span>
+                </div>
+                <div class="clearfix"></div>
+                <br>
+
+                <div class="col-div-1">
+                    <span class="span1">Cloud Computing</span>
+                </div>
+                <div class="col-div-2">
+                    <span class="span1">
+                        <div class="col-div-6">
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle1"></i>
+                        </div>
+                    </span>
+                </div>
+                <div class="clearfix"></div>
+                <br>
+
+                <div class="col-div-1">
+                    <span class="span1"> IT Security & Compliance</span>
+                </div>
+                <div class="col-div-2">
+                    <span class="span1">
+                        <div class="col-div-6">
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle1"></i>
+                        </div>
+                    </span>
+                </div>
+                <div class="clearfix"></div>
+                <br>
+
+                <div class="col-div-1">
+                    <span class="span1">Vendor Management</span>
+                </div>
+                <div class="col-div-2">
+                    <span class="span1">
+                        <div class="col-div-6">
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle1"></i>
+                            <i class="fa fa-circle circle1"></i>
+                        </div>
+                    </span>
+                </div>
+                <div class="clearfix"></div>
+                <br>
+
+
+
+            </div>
+            <div class="column">
+
+                <div class="col-div-1">
+                    <span class="span1">Systems Integration</span>
+                </div>
+                <div class="col-div-2">
+                    <span class="span1">
+                        <div class="col-div-6">
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle1"></i>
+                            <i class="fa fa-circle circle1"></i>
+                        </div>
+                    </span>
+                </div>
+                <div class="clearfix"></div>
+                <br>
+
+                <div class="col-div-1">
+                    <span class="span1">Technical Assessment</span>
+                </div>
+                <div class="col-div-2">
+                    <span class="span1">
+                        <div class="col-div-6">
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle1"></i>
+                            <i class="fa fa-circle circle1"></i>
+                            <i class="fa fa-circle circle1"></i>
+                        </div>
+                    </span>
+                </div>
+                <div class="clearfix"></div>
+                <br>
+
+                <div class="col-div-1">
+                    <span class="span1">Data Migration</span>
+                </div>
+                <div class="col-div-2">
+                    <span class="span1">
+                        <div class="col-div-6">
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle1"></i>
+                            <i class="fa fa-circle circle1"></i>
+                            <i class="fa fa-circle circle1"></i>
+                        </div>
+                    </span>
+                </div>
+                <div class="clearfix"></div>
+                <br>
+
+                <div class="col-div-1">
+                    <span class="span1">Client Relationship Management</span>
+                </div>
+                <div class="col-div-2">
+                    <span class="span1">
+                        <div class="col-div-6">
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle1"></i>
+                            <i class="fa fa-circle circle1"></i>
+                            <i class="fa fa-circle circle1"></i>
+                            <i class="fa fa-circle circle1"></i>
+                        </div>
+                    </span>
+                </div>
+                <div class="clearfix"></div>
+                <br>
+
+                <div class="col-div-1">
+                    <span class="span1">Troubleshooting</span>
+                </div>
+                <div class="col-div-2">
+                    <span class="span1">
+                        <div class="col-div-6">
+                            <i class="fa fa-circle circle"></i>
+                            <i class="fa fa-circle circle1"></i>
+                            <i class="fa fa-circle circle1"></i>
+                            <i class="fa fa-circle circle1"></i>
+                            <i class="fa fa-circle circle1"></i>
+                        </div>
+                    </span>
+                </div>
+                <div class="clearfix"></div>
+                <br>
+
+
+                
+                
+            </div>
+        </div>
+
+		
 	</div>
 	
     
