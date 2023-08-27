@@ -6,6 +6,7 @@
     <title>My Resume</title>
     <link rel="shortcut icon" href="computer.ico" type="image/x-icon" >
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/bebas" type="text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
         margin: 0;
@@ -16,14 +17,11 @@
         img {
         border-radius: 50%;
         }
+
         .col-div-4{width: 15%; float: left;}
         .col-div-8{width: 65%; float: left;}
-
         .col-div-6{width: 50%; float: left; position: relative;}
-
-        .col-div-1{width: 30%; float: left;}
-        .col-div-2{width: 70%; float: left;}
-
+        .col-div-1{width: 50%; float: left;}
         .clearfix{clear: both;}
         
         .spacing{
@@ -38,7 +36,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #588B8B;
+        background-color: #2C666E;
         }
 
         .header .logo {
@@ -53,7 +51,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: #588B8B;
+        background-color: #2C666E;
         margin-right: 20px;
         }
 
@@ -93,7 +91,7 @@
             margin-top: 7px;
         }
         .circle1{
-            color:#588B8B; 
+            color:#2C666E; 
             font-size: 14px!important; 
             margin-top: 7px;
         }
@@ -108,6 +106,59 @@
             content: "";
             display: table;
             clear: both;
+        }
+
+        .footer {
+            clear: both;
+            position: relative;
+            height: 250px;
+            margin-top: -200px;
+            background: #2C666E;
+            bottom: 0;
+        }
+
+        .footer-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .footer-content p{
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 15px;
+            color: #cacdd2;
+        }
+        .socials{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 3rem 0;
+        }
+        .socials li{
+            margin: 0 10px;
+        }
+        .socials a{
+            text-decoration: none;
+            color: #fff;
+            border: 1.1px solid white;
+            padding: 5px;
+
+            border-radius: 50%;
+
+        }
+
+        .socials a i{
+            font-size: 1.1rem;
+            width: 20px;
+            transition: color .4s ease;
+        }
+
+        .socials a:hover i{
+            color: #403233;
         }
 
     </style>
@@ -131,18 +182,17 @@
             <h1>Rachelle A. Beaudry</h1>
             <p class="p3">UI & UX DESIGNER</p>
             <img width="300" height="300" src="samplepic.png" alt="1by1">
-            <p><b>Phone Number:</b> 123-456-7890 &ensp;&ensp;&ensp;&ensp; <b>Email:</b> hello@reallygreatsite.com</p>
-            <p><b>Address: </b>123 Anywhere St., Any City &ensp;&ensp; <b>LinkedIn: </b> <a href="https://www.linkedin.com/login">Rachelle Beaudry</a> </p> 
-            <br>
         </center>
-
-        <hr>
+        
+        <br>
+        <br>
         <br>
         <h2 class="heading" id="ProfSum">Professional Summary</h2>
         <p>Personable IT consultant with 4+ years of experience in a global technology firm. CompTIA A+ Certification. Scored region-leading QST rating based on internal review (98.76%). Seeking to leverage solid technical skills and abilities to advance my career as the next IT consultant for Linsang Group.</p>
         <br>
         <hr>
 
+        <!-- ////////////////////////////////////////////////////////////////////////////// -->
         <h2 class="heading" id="WorkEx">Work Experience</h2>
 
         <div class="col-div-4">
@@ -200,7 +250,7 @@
         <div class="clearfix"></div>
 
 
-<!-- //////////////////////////////////////////////////////////////////////// -->
+        <!-- ////////////////////////////////////////////////////////////////////////////// -->
         
         <hr>
         <h2 class="heading" id="Educ">Educational Background</h2>
@@ -228,7 +278,7 @@
         <br>
         <hr>
 
-        <!-- //////////////////////////////////////////////////////// -->
+        <!-- ////////////////////////////////////////////////////////////////////////////// -->
         
         <div class="row">
             <div class="column">
@@ -269,7 +319,7 @@
         </div>
 
 
-        <!-- //////////////////////////////////////////////////////// -->
+        <!-- ////////////////////////////////////////////////////////////////////////////// -->
         
         
         <br>
@@ -285,7 +335,7 @@
                 <div class="col-div-1">
                     <span class="span1">Project Management</span>
                 </div>
-                <div class="col-div-2">
+                <div class="col-div-1">
                     <span class="span1">
                         <div class="col-div-6">
                             <i class="fa fa-circle circle"></i>
@@ -302,7 +352,7 @@
                 <div class="col-div-1">
                     <span class="span1">Systems Integration</span>
                 </div>
-                <div class="col-div-2">
+                <div class="col-div-1">
                     <span class="span1">
                         <div class="col-div-6">
                             <i class="fa fa-circle circle"></i>
@@ -319,7 +369,7 @@
                 <div class="col-div-1">
                     <span class="span1">Cloud Computing</span>
                 </div>
-                <div class="col-div-2">
+                <div class="col-div-1">
                     <span class="span1">
                         <div class="col-div-6">
                             <i class="fa fa-circle circle"></i>
@@ -336,7 +386,7 @@
                 <div class="col-div-1">
                     <span class="span1"> IT Security & Compliance</span>
                 </div>
-                <div class="col-div-2">
+                <div class="col-div-1">
                     <span class="span1">
                         <div class="col-div-6">
                             <i class="fa fa-circle circle"></i>
@@ -353,7 +403,7 @@
                 <div class="col-div-1">
                     <span class="span1">Vendor Management</span>
                 </div>
-                <div class="col-div-2">
+                <div class="col-div-1">
                     <span class="span1">
                         <div class="col-div-6">
                             <i class="fa fa-circle circle"></i>
@@ -375,7 +425,7 @@
                 <div class="col-div-1">
                     <span class="span1">Systems Integration</span>
                 </div>
-                <div class="col-div-2">
+                <div class="col-div-1">
                     <span class="span1">
                         <div class="col-div-6">
                             <i class="fa fa-circle circle"></i>
@@ -392,7 +442,7 @@
                 <div class="col-div-1">
                     <span class="span1">Technical Assessment</span>
                 </div>
-                <div class="col-div-2">
+                <div class="col-div-1">
                     <span class="span1">
                         <div class="col-div-6">
                             <i class="fa fa-circle circle"></i>
@@ -409,7 +459,7 @@
                 <div class="col-div-1">
                     <span class="span1">Data Migration</span>
                 </div>
-                <div class="col-div-2">
+                <div class="col-div-1">
                     <span class="span1">
                         <div class="col-div-6">
                             <i class="fa fa-circle circle"></i>
@@ -426,7 +476,7 @@
                 <div class="col-div-1">
                     <span class="span1">Client Relationship Management</span>
                 </div>
-                <div class="col-div-2">
+                <div class="col-div-1">
                     <span class="span1">
                         <div class="col-div-6">
                             <i class="fa fa-circle circle"></i>
@@ -443,7 +493,7 @@
                 <div class="col-div-1">
                     <span class="span1">Troubleshooting</span>
                 </div>
-                <div class="col-div-2">
+                <div class="col-div-1">
                     <span class="span1">
                         <div class="col-div-6">
                             <i class="fa fa-circle circle"></i>
@@ -456,15 +506,23 @@
                 </div>
                 <div class="clearfix"></div>
                 <br>
-
-
-                
-                
+                <br>
             </div>
         </div>
-
-		
 	</div>
+    <div class="footer">
+        <div class="footer-content">
+            <br>
+            <br>
+            <p>For inquiries and opportunities, feel free to reach out to me at RachelleBeaudry@email.com or (123) 456-7890. We can also connect on <a href="https://www.linkedin.com/login"  style="color:#403233;">LinkedIn: Rachelle Beaudry</a>. I am currently located in Anytown, USA.</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://github.com/"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/login"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+    </div>
 	
     
         
